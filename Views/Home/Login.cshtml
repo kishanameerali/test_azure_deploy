@@ -1,0 +1,16 @@
+@model bank_accounts.Models.LoginViewModel
+<h2>Login</h2>
+<form method="post" asp-controller="Home" asp-action="loginuser">
+    <div class="form-group">
+        <span asp-validation-for="email"></span>
+        <label asp-for="email"></label>
+        <input class="form-control" asp-for="email">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="password"></span>
+        <label asp-for="password"></label>
+        <input class="form-control" asp-for="password">
+    </div>
+    <input type="submit" value="Submit">
+    <a href="/">Need to Register? Click Here</a>
+</form>
